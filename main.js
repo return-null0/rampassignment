@@ -12,12 +12,12 @@ function validTreeStructure(node, level){
      node.className.includes("ref")  ;
 
     if (!validElement) return;
-    //console.log("HI")
+
     if (level==3 && needsClassCheck) {
         answerString = answerString + node.getAttribute("value");
         return; 
         
-        //implement addition to answer
+
     }
     level++;
     for (const ele of node.childNodes){
